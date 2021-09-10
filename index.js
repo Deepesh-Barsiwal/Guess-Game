@@ -2,8 +2,15 @@ let number ;
 
 const generate_Number = ()=>{
 
-let number =Math.trunc( Math.random()*10)%6 + 1
-    
+     let n1 = Math.random();
+
+     let n2 = n1*10
+
+     n2 = Math.trunc(n2);
+
+     n2 = (n2 % 6) + 1;
+
+     number = n2
      console.log(number)
 
 
@@ -48,8 +55,6 @@ const check = ()=>{
         pray.style.color="green"
         returnBtn.style.display='block'
     }
-   
-
     if (values != number){
 loseImage.style.display="block"
 pray.innerHTML = `Sorry ${name} you are wrong `;
@@ -72,8 +77,7 @@ returnBtn.style.display='block'
 const names = ()=>{
     let name = document.getElementById('name').value
     let text = document.getElementById('text')
-    let text2 = document.getElementById('text2')
-    if (name !== null) {
+       if (name !== null) {
         text.innerHTML=""
    
     }
@@ -82,14 +86,12 @@ const names = ()=>{
 
 const numbers = ()=>{
     let text2 = document.getElementById('text2')
-    let values = document.getElementById('input').value;
+   
     if (name !== null) {
         
         text2.innerHTML=""
     }
-    if (isNaN(values)) {
-        text2.innerHTML="Please write number only"
-    }
+  
 }
 const returnHome = ()=>{
     location.reload()
