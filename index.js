@@ -2,15 +2,8 @@ let number ;
 
 const generate_Number = ()=>{
 
-     let n1 = Math.random();
-
-     let n2 = n1*100
-
-     n2 = Math.trunc(n2);
-
-     n2 = (n2 % 20) + 1;
-
-     number = n2
+let number =Math.trunc( Math.random()*10)%10 + 1
+    
      console.log(number)
 
 
