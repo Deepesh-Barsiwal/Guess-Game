@@ -32,7 +32,7 @@ const numberGenerate = ()=>{
    section1.style.display='none'
    section2.style.display='block'
 
-   }, 1000);
+   }, 5000);
 }
 
 const check = ()=>{
