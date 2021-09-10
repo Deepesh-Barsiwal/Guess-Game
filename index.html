@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="index.css">
+<title>GUESS THE NUMBER</title>
+</head>
+<body>
+<!--section-1-->
+<div id= "section-1" class="container">
+    <button class="btn btn-primary m-3 d-block mx-auto " onclick="numberGenerate()">Generate a number</button>
+</div>
+
+<!--section-2--->
+<div  class="container">
+    <div class="row">
+        <div id="section-2" class="col col-12 text-center">
+            <img src="think.gif"  alt="">
+            <p class="text-danger fs-2 fw-bolder">Guess The Number 1 to 20 </p>
+ <div >
+    <input type="text" placeholder="Enter Your Name" id="name" class="form-control d-block mx-auto" onclick="names()">
+    <span id="text" class="text-start text-danger">Please Write Your Name First</span>
+ </div>
+         <div class="">
+            <input type="text" placeholder="Enter your number" id ="input" class="m-2 form-control d-block mx-auto" onclick="numbers()">
+            <span id="text2" class="text-start text-danger">Please Write Your Number</span>
+         </div>
+<button class="btn btn-primary m-4" onclick="check()">Check</button>
+
+        </div>
+        <div class=" col col-12 text-center">
+
+            <img  class ='w-100' id="successImage" src="success.gif" alt="">
+      
+        <img  class ='w-100' id="loseImage" src="lose.gif" alt="">
+        <img id="goBack" class="w-100" src="goback.gif" alt="">
+        <span id="pray" class=" fw-bold"></span>
+        <button id="returnBtn" class="btn btn-primary m-4 mx-auto" onclick="returnHome()">Play Again</button>
+      
+        </div>
+    </div>
+</div>
+
+<!--section3-->
+<div id="section-3" class="container text-center">
+    
+    <img src="ludo.gif" alt="">
+    <p>Generating Number ....</p>
+</div>
+ <script src="index.js">
+ </script>   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
