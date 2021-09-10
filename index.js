@@ -2,7 +2,7 @@ let number ;
 
 const generate_Number = ()=>{
 
-let number =Math.trunc( Math.random()*10)%10 + 1
+let number =Math.trunc( Math.random()*10)%6 + 1
     
      console.log(number)
 
